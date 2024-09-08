@@ -26,7 +26,7 @@ const Controlled = () => {
           name="firstName"
           value={name}
           onChange={handleChnage}
-        />{" "}
+        />
         <br />
         <label>Password:</label>
         <input

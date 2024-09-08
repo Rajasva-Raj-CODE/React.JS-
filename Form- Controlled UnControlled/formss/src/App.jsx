@@ -5,8 +5,8 @@ import UnControlledForm from './UnControlled/UnControlledForm'
 const App = () => {
   return (
    <>
-   {/* <Controlled/> */}
-   <UnControlledForm/>
+   <Controlled/>
+   {/* <UnControlledForm/> */}
    </>
   )
 }

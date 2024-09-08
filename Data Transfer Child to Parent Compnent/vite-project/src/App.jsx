@@ -1,10 +1,15 @@
-import { React } from "react";
-import from "./Child"
+import React from 'react'
+import Child from './Child'
 
 const App = () => {
-  return <div>
-    <Child />
-  </div>;
-};
+  function getData(data){
+    console.log(data);
+    
+  }
+  
+  return (
+    <><Child getData={getData}/></>
+  )
+}
 
-export default App;
+export default App
