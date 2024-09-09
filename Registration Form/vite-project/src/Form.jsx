@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Form = () => {
   const data = {
@@ -7,14 +7,29 @@ const Form = () => {
     password: "",
   };
   const [inputData, setInputData] = useState(data);
+  const [flag, setFlag] = useState(false);
+  useEffect(()=>{
+       console.log("registered");
+       
+  },[flag])
 
   function handleData(e) {
-    setInputData({ ...inputData, [e.target.name]:e.target.value });
+    setInputData({ ...inputData, [e.target.name]: e.target.value });
     console.log(inputData);
-    
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!inputData.name || !inputData.email || !inputData.password) {
+      alert("All fields are Mandatory");
+    } else {
+      setFlag(true);
+    }
   }
   return (
-    <form className="container">
+   <>
+   <pre>{(flag)?<h2 className="ui-define">Hello{inputData.name},You've Registered Successfully</h2>:""}</pre>
+    <form className="container" onSubmit={handleSubmit}>
       <div className="header">
         <h1>Registration Form</h1>
       </div>
@@ -52,6 +67,7 @@ const Form = () => {
         <button type="submit">Submit</button>
       </div>
     </form>
+   </>
   );
 };
 
