@@ -3,7 +3,7 @@ import  { Component } from 'react'
 class ComponentDidUpdate extends Component {
   constructor(){
     super()
-    // console.log("constructor");
+    console.log("constructor");
     this.state={
       count:0
     }
@@ -16,7 +16,8 @@ class ComponentDidUpdate extends Component {
     // }
 
     // this.setState({count:this.state.count+1})
-
+   
+    //* componentDidUpdate call only on updation state or props updation
     //? we can not directly update props or state we have to give condition then it will update state and prop
 
     if(this.state.count <5){
@@ -26,7 +27,7 @@ class ComponentDidUpdate extends Component {
   }
 
   render() {
-  // console.log("render");
+  console.log("render");
   
     return (
       <>

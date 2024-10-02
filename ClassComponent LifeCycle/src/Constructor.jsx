@@ -20,3 +20,5 @@ import { Component } from 'react'
 }
 
 export default Constructor
+
+//*  Constructor only call at a one time it did not call state updation or props updation
