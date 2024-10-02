@@ -5,9 +5,11 @@ import ComponentDidUpdate from './ComponentDidUpdate'
 import Constructor from './Constructor'
 import Render from './Render'
 import ShouldComponentUpdateMethod from './ShouldComponentUpdateMethod'
+import GetSnapshotBeforeUpdate from './GetSnapshotBeforeUpdate'
+import ComponentWillUnmount from './ComponentWillUnmount'
 
 const App = () => {
-  // const [name,setName]  = useState("Raj")
+  const [name,setName]  = useState("Raj")
   return (
 
     <>
@@ -16,7 +18,10 @@ const App = () => {
       <button onClick={()=>setName("Rohan")}>click</button> */}
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
-      <ShouldComponentUpdateMethod/>
+      {/* <ShouldComponentUpdateMethod/> */}
+      {/* <GetSnapshotBeforeUpdate data={name}/>
+      <button onClick={()=>setName("Rohit")}>update name</button> */}
+      <ComponentWillUnmount/>
     </>
   )
 }

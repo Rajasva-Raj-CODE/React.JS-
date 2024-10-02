@@ -33,4 +33,4 @@ export default ShouldComponentUpdateMethod
 //* it will call only when any updation occurs in our component  
 //* if we update state and props but we dont want to call render method then we use ShouldComponentUpdateMethod
 //* by default ShouldComponentUpdateMethod return false so, by this render method can not call. if we want call the render method then we have to return true on ShouldComponentUpdateMethod
-//? basically is was used to update specific data but don't want to render whole component
+//? basically it was used to update specific data but don't want to render whole component
