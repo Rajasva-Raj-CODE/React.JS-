@@ -3,6 +3,7 @@ import UseEffectWithProps from "./Components/UseEffects/UseEffectWithProps";
 import { useState } from "react";
 import UseEffectWithConditions from "./Components/UseEffects/UseEffectWithConditions";
 import Pure from "./Components/PureComponents/Pure";
+import UseMemo from "./Components/UseMemoHook/UseMemo";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -15,7 +16,8 @@ const App = () => {
       {/* <UseEffectWithConditions age={age} count={count} />
       <button onClick={() => setAge(age + 1)}>Update Age</button>
       <button onClick={() => setCount(count + 1)}>Update Count</button> */}
-      <Pure/>
+      {/* <Pure/> */}
+      <UseMemo/>
     </>
   );
 };
