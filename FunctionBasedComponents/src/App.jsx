@@ -4,6 +4,7 @@ import { useState } from "react";
 import UseEffectWithConditions from "./Components/UseEffects/UseEffectWithConditions";
 import Pure from "./Components/PureComponents/Pure";
 import UseMemo from "./Components/UseMemoHook/UseMemo";
+import UseCallback from "./Components/UseCallbackHook/UseCallback";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -17,7 +18,8 @@ const App = () => {
       <button onClick={() => setAge(age + 1)}>Update Age</button>
       <button onClick={() => setCount(count + 1)}>Update Count</button> */}
       {/* <Pure/> */}
-      <UseMemo/>
+      {/* <UseMemo/> */}
+      <UseCallback/>
     </>
   );
 };
