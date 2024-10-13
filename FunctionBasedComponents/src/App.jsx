@@ -6,6 +6,7 @@ import Pure from "./Components/PureComponents/Pure";
 import UseMemo from "./Components/UseMemoHook/UseMemo";
 import UseCallback from "./Components/UseCallbackHook/UseCallback";
 import ContextApiWithHooks from "./Components/ContextAPIwithHooks/ContextApiWithHooks";
+import UseRef from "./Components/UseRef Hook/UseRef";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -21,7 +22,8 @@ const App = () => {
       {/* <Pure/> */}
       {/* <UseMemo/> */}
       {/* <UseCallback/> */}
-      <ContextApiWithHooks/>
+      {/* <ContextApiWithHooks/> */}
+      <UseRef/>
     </>
   );
 };
