@@ -8,6 +8,7 @@ import UseCallback from "./Components/UseCallbackHook/UseCallback";
 import ContextApiWithHooks from "./Components/ContextAPIwithHooks/ContextApiWithHooks";
 import UseRef from "./Components/UseRef Hook/UseRef";
 import ForwardRef from "./Components/ForwardRef/ForwardRef";
+import ArrayListing from "./Components/ArrayListing/ArrayListing";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -25,7 +26,8 @@ const App = () => {
       {/* <UseCallback/> */}
       {/* <ContextApiWithHooks/> */}
       {/* <UseRef/> */}
-      <ForwardRef/>
+      {/* <ForwardRef/> */}
+      <ArrayListing/>
     </>
   );
 };
