@@ -24,19 +24,18 @@ const ArrayListing = () => {
         <h3 key={index}>{item}</h3>
       ))} */}
 
-<table border={1}>
-    {
-        employeeInfo.map((emp,index)=>
-            <tr key={index}>
-                <td>{emp.name}</td>
-                <td>{emp.email}</td>
-                <td>{emp.contact}</td>
-               
-            </tr>
-        )
-    }
-</table>
-      
+      <table border={1}>
+        <tbody>
+        {employeeInfo.map((emp, index) => (
+          <tr key={index}>
+            <td>{emp.name}</td>
+            <td>{emp.email}</td>
+            <td>{emp.contact}</td>
+          </tr>
+         
+        ))}
+         </tbody>
+      </table>
     </div>
   );
 };
