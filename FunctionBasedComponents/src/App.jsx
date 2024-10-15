@@ -7,6 +7,7 @@ import UseMemo from "./Components/UseMemoHook/UseMemo";
 import UseCallback from "./Components/UseCallbackHook/UseCallback";
 import ContextApiWithHooks from "./Components/ContextAPIwithHooks/ContextApiWithHooks";
 import UseRef from "./Components/UseRef Hook/UseRef";
+import ForwardRef from "./Components/ForwardRef/ForwardRef";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -23,7 +24,8 @@ const App = () => {
       {/* <UseMemo/> */}
       {/* <UseCallback/> */}
       {/* <ContextApiWithHooks/> */}
-      <UseRef/>
+      {/* <UseRef/> */}
+      <ForwardRef/>
     </>
   );
 };
