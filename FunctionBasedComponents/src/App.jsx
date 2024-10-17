@@ -13,6 +13,7 @@ import BootstrapArrayListing from "./Components/BootstrapArrayListing/BootstrapA
 import NestedListWithNestedArray from "./Components/NestedListWithNestedArray/NestedListWithNestedArray";
 import Reuse from "./Components/Reuse/Reuse";
 import LiftingStateUp from "./Components/Lifiting State UP/LiftingStateUp";
+import ControlledComp from "./Components/ControlledComponent/ControlledComp";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -35,7 +36,8 @@ const App = () => {
       {/* <BootstrapArrayListing/> */}
       {/* <NestedListWithNestedArray/> */}
       {/* <Reuse/> */}
-      <LiftingStateUp/>
+      {/* <LiftingStateUp/> */}
+      <ControlledComp/>
     </>
   );
 };
