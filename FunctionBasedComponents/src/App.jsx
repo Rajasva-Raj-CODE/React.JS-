@@ -11,6 +11,8 @@ import ForwardRef from "./Components/ForwardRef/ForwardRef";
 import ArrayListing from "./Components/ArrayListing/ArrayListing";
 import BootstrapArrayListing from "./Components/BootstrapArrayListing/BootstrapArrayListing";
 import NestedListWithNestedArray from "./Components/NestedListWithNestedArray/NestedListWithNestedArray";
+import Reuse from "./Components/Reuse/Reuse";
+import LiftingStateUp from "./Components/Lifiting State UP/LiftingStateUp";
 const App = () => {
   // const [count,setCount] = useState(0)
   // const [age, setAge] = useState(20);
@@ -31,7 +33,9 @@ const App = () => {
       {/* <ForwardRef/> */}
       {/* <ArrayListing/> */}
       {/* <BootstrapArrayListing/> */}
-      <NestedListWithNestedArray/>
+      {/* <NestedListWithNestedArray/> */}
+      {/* <Reuse/> */}
+      <LiftingStateUp/>
     </>
   );
 };
