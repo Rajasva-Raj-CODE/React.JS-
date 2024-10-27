@@ -18,6 +18,7 @@ const APIcalling = () => {
             <td>ID</td>
             <td>Name</td>
             <td>UserName</td>
+            <td>UserName</td>
             <td>Email</td>
             <td>City</td>
           </tr>
